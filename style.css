@@ -1,0 +1,220 @@
+html {
+    text-align: center;
+    background-color: #EBEBFF;
+}
+
+h1 {
+    z-index: 1;
+    background-color: #4A08E2;
+    position: absolute; 
+    font-size: 60px;
+    display: block;
+}
+
+h2 {
+    color:#4A08E2;
+    font-family: "Lilita One";
+    font-size: 30px;
+}
+
+
+
+
+header {
+    margin-top: 0;
+    width: 100%;
+    height: 350px;
+    background-color:#4A08E2;
+    position: relative;
+    color: #FFF2A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    border-radius: 1em;
+    z-index: 0;
+    animation-duration: 1s;
+}
+
+.line-wide {
+    transform: scaleX(1);
+    animation-name: change-width;
+}
+
+.line-tall {
+    transform: scaleY(1);
+    animation-name: change-height;
+}
+
+@keyframes change-width {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes change-height {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+ul {
+    margin-right: 20px;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    margin-right: 10px;
+}
+
+nav {
+    font-size: 20px;
+    display: flex;
+    position: fixed;
+    align-self:baseline;
+    text-align: center;
+    background-color: #FFF2A8;
+    color: blueviolet;
+    z-index: 3;
+    border-radius: 25px;
+    line-height: 5px;
+    margin-top: 15px;
+    border: 2px dashed blueviolet;
+}
+
+.lobster {
+    font-family: "Lobster";
+}
+
+#job-title {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 100px;
+    background-color: #4A08E2;
+    color: beige;
+}
+
+.card {
+    display: flexbox;
+    height: 210px;
+    width: 600px;
+    background-color: #FFF2A8;
+    justify-content: flex-start;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.card h3{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.site-links {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 30px;
+    align-self: flex-end;
+    display: inline-flex;
+}
+
+button {
+    margin-inline: 5px;
+    width: 150px;
+    height: 50px;
+    color: lavender;
+    border-radius: 10px;
+    font-family: "Lilita One";
+    font-size: 20px;
+    border: 2px solid gold;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: blueviolet;
+}
+
+a:hover {
+    color: red;
+}
+
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    height: 100px;
+    width: 100px;
+    margin-right: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.icon p {
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: "Lillita One";
+}
+
+#message {
+    height: 150px;
+}
+
+input {
+    width: 50%;
+    border: 2px solid #4A08E2;
+    border-radius: 4px;
+}
+
+.contact {
+    box-sizing: border-box;
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+input[type=submit] {
+    color: beige;
+    background-color: #4A08E2;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+}
