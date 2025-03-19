@@ -29,31 +29,31 @@
     <h2 id = "projects">Projects</h2>
     <h2 id = "skills">Skills</h2>
         <div class = "icon">
-            <img src = "Resources/Images/python_logo_final.png"/>
+            <img src = "./python_logo_final.png"/>
             <p>Python</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/css_logo.png"/>
+            <img src = "./css_logo.png"/>
             <p>CSS</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/html_logo_2.webp"/>
+            <img src = "./html_logo_2.webp"/>
             <p>HTML</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/java_icon.png"/>
+            <img src = "./java_icon.png"/>
             <p>Java</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/js_logo.webp"/>
+            <img src = "./js_logo.webp"/>
             <p>JavaScript</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/linux-icon.png"/>
+            <img src = "./linux-icon.png"/>
             <p>Linux</p>
         </div>
         <div class = "icon">
-            <img src = "Resources/Images/Postgresql_icon.png"/>
+            <img src = "./Postgresql_icon.png"/>
             <p>PostgreSQL</p>
         </div>
     <h2 id = "education">Education</h2>
@@ -66,17 +66,19 @@
         </div>
     <div class = "contact">
     <h2 id = "contact">Contact Me</h2>
-        <p>Please contact me via email at kayleejones137@outlook.com or via the form below.</p>
+        <p>Please email me at kayleejones137@outlook.com or via this form.</p>
         <form action = "https://formsubmit.co/kayleejones137@outlook.com" method = "POST">
-            First Name: <input type="text" name="first_name" requried><br>
-            Last Name: <input type="text" name="last_name" required><br>
-            Email: <input type="text" name="email" required><br>
-            Message:<br><textarea rows="5" name="message" cols="30" required></textarea><br>
-            <input type = "submit" value = "Send Message"/>
-            <div style="display:none" id="thankYouMessage">
-                <h2><em>Thank you</em> for contacting me! I will get back to you soon!
-                </h2>
-            </div>
+            <!-- Honeypot-->
+            <input type = "text" name = "_honey" style = "display: none;">
+            <!-- Disable Captcha -->
+            <input type = "hidden" name = "_captcha" value = "false">
+
+            <!--move to success.html when form is submitted-->
+            <input type = "hidden" name = "_next" value = "kjones137.github.io/portfoliosite/success.html">
+
+            <input type="text" name="email" placeholder = "Your Email" required maxlength = "500">
+            <textarea rows="5" name= "name" cols="30" required placeholder = "Your Message" maxlength = "5000"></textarea><br>
+            <button type = "submit">Send Message</button>
         </form>
     </div>
             <script src = "./script.js"></script>
