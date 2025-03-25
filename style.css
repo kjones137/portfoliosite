@@ -18,8 +18,6 @@ h2 {
 }
 
 
-
-
 header {
     margin-top: 0;
     width: 100%;
@@ -116,9 +114,50 @@ nav {
     justify-content: flex-start;
     justify-self: center;
     border-radius: 10px;
+    transition: all .2s ease-in-out;
 }
 
-.card h3{
+.project_card {
+    display: flex;
+    height: 210px;
+    width: 800px;
+    background-color: #FFF2A8;
+    justify-self: center;
+    justify-content: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.project_card:hover, .card:hover {
+    transform: scale(1.05);
+}
+
+.project_img img{
+    display: inline-block;
+    width: 350px;
+    height: 90%;
+    margin-top: 21px;
+    margin-right: 0;
+    border-radius: 10px;
+}
+
+.project_desc {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    align-content: center;
+}
+
+.project_desc h3 {
+    font-size: 22px;
+}
+
+.project_desc p, .project_desc a {
+    justify-items: left;
+}
+
+.card h3 {
     padding-top: 10px;
     font-weight: bold;
 }
@@ -128,7 +167,9 @@ nav {
     justify-content: flex-start;
     font-size: 20px;
     margin-left: 10px;
+    font-family: "Times New Roman";
 }
+
 
 
 .site-links {
@@ -185,6 +226,7 @@ a:hover {
     transform: scale(1.1);
 }
 
+
 .icon p {
     font-size: 20px;
     font-style: oblique;
@@ -192,29 +234,40 @@ a:hover {
     font-family: "Lillita One";
 }
 
-#message {
-    height: 150px;
-}
-
-input {
+input, textarea {
+    font-family: "Times New Roman";
     width: 50%;
     border: 2px solid #4A08E2;
     border-radius: 4px;
 }
 
 .contact {
-    box-sizing: border-box;
+    position: relative;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
 }
 
-label {
-    padding: 12px 12px 12px 0px;
-    display: inline-block;
-}
 
-input[type=submit] {
-    color: beige;
+button[type=submit] {
+    color: white;
     background-color: #4A08E2;
     margin-top: 10px;
     width: 120px;
     height: 40px;
+    font-family: "Lillita One";
+    font-size: 16px;
+}
+
+.contact input {
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+button[type=submit]:hover {
+    background-color: blueviolet;
+    cursor: pointer;
 }
